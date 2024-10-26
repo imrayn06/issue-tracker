@@ -1,2 +1,4 @@
 # issue-tracker
-Issu Tracker
+Issue Tracker
+
+https://charming-pudding-be5fd9.netlify.app/
