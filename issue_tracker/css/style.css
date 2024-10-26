@@ -1,0 +1,204 @@
+/* General reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container styling */
+.ui-container {
+  width: 80vw; /* Full width of the viewport */
+  padding: 2rem;
+  margin: 0; /* Utilize full width */
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+h2, h3 {
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* Form container styling */
+.issue-ui {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="text"], select {
+  width: 100%; /* Full width for inputs */
+  padding: 12px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #3498db;
+}
+
+/* Issue list styling */
+.issue-list {
+  margin-top: 2rem;
+}
+
+.issue-item {
+  background-color: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.issue-item:hover {
+  background-color: #f1f1f1; 
+}
+
+.issue-item h4 {
+  font-size: 1.3rem;
+  color: #2980b9;
+  margin-bottom: 0.5rem;
+}
+
+.issue-item p {
+  font-size: 1rem;
+  color: #555;
+  overflow-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+/* Severity text styling */
+.issue-item .severity {
+  font-weight: bold;
+}
+
+/* Button styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0 10px;
+  max-width: 120px;
+}
+
+.submit-btn {
+  background-color: #3498db;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Done button styling */
+.done-btn {
+  background-color: #e74c3c;
+}
+
+.done-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.done-btn.done {
+  background-color: #2bc058;
+}
+
+/* Delete button styling */
+.delete-btn {
+  background-color: #645e5e;
+}
+
+.delete-btn:hover {
+  background-color: #c51d0a;
+  transform: translateY(-2px);
+}
+
+.delete-btn:active {
+  background-color: #a93226;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .ui-container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"], select {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Dropdown button styling */
+.dropdown-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width for dropdown button */
+}
+
+.dropdown-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+  display: none;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  margin-top: 0.5rem;
+}

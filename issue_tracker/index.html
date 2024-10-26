@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Tracker</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <div class="ui-container">
+      <h1>Issue Tracker by Narayan Dutta</h1>
+      <div class="main-container">
+        <div class="issue-ui">
+          <h2>Add a New Issue :</h2>
+          <h3>Description :</h3>
+          <input type="text" class="description" placeholder="Describe the issue ...">
+          <h3>Severity :</h3>
+          <select name="severity" id="severity-selector">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+          <h3>Assigned To :</h3>
+          <input type="text" class="assigned-to" placeholder="Enter responsible person...">
+          <h3>Details:</h3>
+          <input type="text" class="details" placeholder="Enter additional details..."> 
+          <div class="button-container">
+            <button class="submit-btn btn" type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="issue-list">
+        <h2>Current Issues:</h2>
+        <!-- Issues -->
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
